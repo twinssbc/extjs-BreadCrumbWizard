@@ -1,0 +1,38 @@
+.x-wizard-component {
+    margin: 10px;
+}
+
+.x-wizard-breadcrumb {
+    margin: 0px 30px 0px 0px;
+    padding: 5px 10px 5px;
+    border-radius: 4px 0px 0px 4px;
+    border-width: 0px;
+    border-style: none;
+    background: #f5f5f5;
+    line-height: 20px;
+}
+
+.x-wizard-breadcrumb:after {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f5f5f5;
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-top: -15px;
+    right: -15px;
+}
+
+.x-wizard-navigation {
+    margin: 2px;
+}
+
+.x-wizard-breadcrumb-over .x-btn-inner {
+    color: #3399FF;
+}
+
+.x-wizard-breadcrumb-pressed .x-btn-inner {
+    font-weight: bold;
+}
