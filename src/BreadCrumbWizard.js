@@ -1,5 +1,5 @@
 /**
- * BreadCrumbWizard for ExtJS 4.1, a container that acts as wizard.
+ * BreadCrumbWizard for ExtJS 4.x, a container that acts as wizard.
  * It also has breadcrumbs at the top to help navigating between views.
  *
  * The BreadCrumbWizard is based on the Extjs Container, so that it can be nested directly in the page or in a pop up window.
@@ -12,7 +12,7 @@
  * Feel free to add/override the getSubmitData method in each view component.
  *
  * @author: twinssbc
- * @version 1.0.0
+ * @version 1.0.1
  * @requires BreadCrumbWizard.css
  * @xtype breadcrumbwizard
  */
