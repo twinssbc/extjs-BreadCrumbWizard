@@ -50,10 +50,13 @@ Ext.define('Ext.ux.BreadCrumbWizard', {
                 index: index,
                 text: childView.breadCrumbTitle,
                 listeners: {
-                    toggle: function (button, pressed) {
-                        if (pressed) {
-                            me.switchView(this.index);
-                        }
+                    toggle: {
+                        fn: function (button, pressed) {
+                            if (pressed) {
+                                this.switchView(button.index);
+                            }
+                        },
+                        scope: me
                     }
                 }
             });
@@ -86,16 +89,14 @@ Ext.define('Ext.ux.BreadCrumbWizard', {
                     {
                         text: 'Next',
                         itemId: 'nextBtn',
-                        handler: function () {
-                            me.onNext();
-                        }
+                        handler: me.onNext,
+                        scope: me
                     },
                     {
                         text: 'Cancel',
                         itemId: 'cancelBtn',
-                        handler: function () {
-                            me.onClose();
-                        }
+                        handler: me.onClose,
+                        scope: me
                     }
                 ]
             }
